@@ -5,13 +5,14 @@ If You are having issues installing - do this - it worked for me:
 2) Flash it to an SD Card:
   --> Link to Freeware to Flash the Image File: https://etcher.io/
 3) Put the SD Card into Your Pi 3 and plug it into a keyboard, monitor, and Internet - Power it on by plugging it in
+
 4)Install git to get the MagicMirror code:
 
 sudo apt-get install git
 
 5)Install the missing packages:
 
-sudo apt-get install libxss1
+sudo apt-get install libxss1 (Already be installed w/image?)
 
 sudo apt-get install libnss3
 
@@ -26,10 +27,12 @@ curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installer
 8) Go to MagicMirror folder:
 
 cd ~/MagicMirror
-nstall the app:
 
-9) npm install (May be unneccessary)
-Duplicate config/config.js.sample to config/config.js.
+9)Install the app:
+
+npm install (May be unneccessary)
+
+10) Duplicate config/config.js.sample to config/config.js.
 
 cp config/config.js.sample config/config.js
 
